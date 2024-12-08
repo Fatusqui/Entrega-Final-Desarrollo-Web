@@ -9,7 +9,10 @@
 
 
 /*index*/
-.presentation {
+.presentacion {
+  display: grid;
+  grid-template-columns: repeat (auto-fit, 
+  minmax(150px, 1fr));
   font-size: 1rem;
   text-align: center;
   padding: 50px 20px;
@@ -17,7 +20,7 @@
   color: white;
 }
 
-.presentation h1 {
+.presentacion h1 {
   font-size: 3rem;
   font-family: 'Anton', sans-serif;
   margin-bottom: 20px;
@@ -25,7 +28,7 @@
   letter-spacing: 3px;
 }
 
-.presentation p {
+.presentacion p {
   font-size: 1.2rem;
   margin: 20px 0;
   max-width: 800px;
@@ -33,12 +36,12 @@
   margin-right: auto;
 }
 
-.presentation p span {
+.presentacion p span {
   color: #ffe600; 
   font-weight: bold;
 }
 
-.presentation .btn {
+.presentacion .btn {
   margin-top: 20px;
   padding: 15px 30px;
   
@@ -69,6 +72,9 @@
 }
 
 body {
+  display: grid;
+  grid-template-columns: repeat (auto-fit, 
+  minmax(150px, 1fr));
   font-family: 'Space Grotesk', sans-serif;
   background-color: #141C29;
   padding: 80px;
@@ -76,14 +82,12 @@ body {
   margin-bottom: 0px;
 }
 
-h1 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  margin: 30px 0px;
-}
+
 
 img {
+  display: grid;
+  grid-template-columns: repeat (auto-fit, 
+  minmax(150px, 1fr));
    max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -94,7 +98,10 @@ img {
 }
 
 
-header {
+.header-products {
+  display: grid;
+  grid-template-columns: repeat (auto-fit, 
+  minmax(150px, 1fr));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,6 +126,9 @@ header {
 }
 
 .carrito {
+  display: grid;
+  grid-template-columns: repeat (auto-fit, 
+  minmax(150px, 1fr));
   width: 30px;
   filter: invert(100%);
   width: 40px;
@@ -133,6 +143,9 @@ header {
 
 
 .contenedor {
+  display: grid;
+  grid-template-columns: repeat (auto-fit, 
+  minmax(150px, 1fr));
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -498,7 +511,7 @@ input[type="submit"]:hover {
     border-radius: 50%;
     text-align: center;
     color: white;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
   }
   
   .social-links a:hover {

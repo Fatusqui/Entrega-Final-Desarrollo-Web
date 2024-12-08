@@ -166,4 +166,3 @@ x.addEventListener("click", () => {
     contenedorCompra.classList.add("none");
 });
 
-
