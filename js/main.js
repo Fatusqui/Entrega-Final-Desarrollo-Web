@@ -22,6 +22,8 @@ document.querySelector(".x").addEventListener("click", () => {
 });
 
 
+
+
 localStorage.removeItem("productos");
 
 
@@ -165,4 +167,5 @@ x.addEventListener("click", () => {
     body.style.overflow = "auto";
     contenedorCompra.classList.add("none");
 });
+
 
