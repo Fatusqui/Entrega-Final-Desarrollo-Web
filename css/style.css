@@ -631,9 +631,6 @@ input[type="submit"]:hover {
   
 
   /*menu*/
-/* General */
-
-
 .menu {
   position: fixed; 
   top: 0;
@@ -686,7 +683,7 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
-/* Icono menú hamburguesa */
+
 .menu-hamburguesa {
   display: none;
   flex-direction: column;
@@ -701,7 +698,7 @@ input[type="submit"]:hover {
   transition: all 0.3s ease;
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media (max-width: 768px) {
   .menu {
     flex-direction: column; 
@@ -709,13 +706,13 @@ input[type="submit"]:hover {
   }
 
   .menu ul {
-    display: none; /* Ocultar menú por defecto */
+    display: none;
     flex-direction: column; 
     width: 100%;
   }
 
   .menu ul.active {
-    display: flex; /* Mostrar menú al activarlo */
+    display: flex; 
   }
 
   .menu ul li {
@@ -730,7 +727,7 @@ input[type="submit"]:hover {
   }
 
   .menu-hamburguesa {
-    display: flex; /* Mostrar el ícono en pantallas pequeñas */
+    display: flex; 
   }
 
   .menu-hamburguesa.active .linea:nth-child(1) {
@@ -745,3 +742,10 @@ input[type="submit"]:hover {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+  }
+}
+

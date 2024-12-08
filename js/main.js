@@ -168,4 +168,12 @@ x.addEventListener("click", () => {
     contenedorCompra.classList.add("none");
 });
 
+// Seleccionar elementos del DOM
+const menuHamburguesa = document.querySelector('.menu-hamburguesa');
+const menu = document.querySelector('.menu ul');
 
+// Agregar un evento de clic al ícono de hamburguesa
+menuHamburguesa.addEventListener('click', () => {
+  menu.classList.toggle('active'); // Mostrar/ocultar el menú
+  menuHamburguesa.classList.toggle('active'); // Animar el ícono
+});

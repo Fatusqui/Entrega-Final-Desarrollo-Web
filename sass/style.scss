@@ -78,8 +78,72 @@ html{
   color: $color_fondo;
   font-weight: bold;
 }
+.menu-hamburguesa {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-hamburguesa .linea {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column; 
+    width: 100%;
+  }
+
+  .menu ul.active {
+    display: flex; 
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .menu ul li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .menu-hamburguesa {
+    display: flex; 
+  }
+
+  .menu-hamburguesa.active .linea:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-hamburguesa.active .linea:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-hamburguesa.active .linea:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+  }
             }
         }
+      }
         .presentacion{
             display: grid;
             grid-template-columns: repeat (auto-fit, 
