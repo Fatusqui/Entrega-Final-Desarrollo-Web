@@ -26,7 +26,9 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  animation:scale-up-center 2.2s;
 }
+@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
 
 .presentacion p {
   font-size: 1.2rem;
