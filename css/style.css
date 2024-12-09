@@ -12,7 +12,7 @@
 .presentacion {
   display: grid;
   grid-template-columns: repeat (auto-fit, 
-  minmax(150px, 1fr));
+  minmax(150%, 1fr));
   font-size: 1rem;
   text-align: center;
   padding: 50px 20px;
@@ -98,12 +98,12 @@ img {
 .header-products {
   display: grid;
   grid-template-columns: repeat (auto-fit, 
-  minmax(150px, 1fr));
+  minmax(150%, 1fr));
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15%;
-  height: 70px;
+  height: 70%;
   top: 0;
   position: fixed;
   width: 100%;
